@@ -1,18 +1,16 @@
 <div class="wrapper" idea-button>
-  <a ui-sref=".list({searchTerm: data.yelpSearch})">  
-    <div class="centerMessage" ng-class="class" ng-click="getList()">
-      <span class="centerMessageText" model="{{ idea }}" animate-idea>{{ idea }}</span>
-    </div>
-  </a>
-  <!-- <event-list class></event-list> -->
+  <div class="centerMessage" ng-class="class" ng-click="getList()">
+    <span class="centerMessageText" model="{{ idea }}" animate-idea>{{ idea }}</span>
+  </div>
+  <event-list class></event-list>
   <!-- <button idea-button class="dislike mainscreen button" ng-click="dislikeIdea()" ng-if="sideBtns">Dislike</button> -->
     <div ui-view></div>
 
+  <a ui-sref="home">
     <button class="get-idea-btn" ng-click="getIdea()">
-      <a ui-sref="home">
         <div class='btn-inner'>{{ button }}</div>
-      </a>
     </button>
+  </a>
 
   <!-- <button idea-button class="like mainscreen button" ng-click="likeIdea()" ng-if="sideBtns">Like</button> -->
 </div>

@@ -11,7 +11,7 @@ angular.module('App.ideaBtn', [])
           $scope.idea = idea.data.display;
           $scope.moreInfo = true;
           $scope.sideBtns = true;
-          // $scope.eventList = false;
+          $scope.eventList = false;
           $scope.changeClass();
           $scope.button = "Next";
           $scope.yelpResults = '';
@@ -27,9 +27,9 @@ angular.module('App.ideaBtn', [])
       // Will populate with API data, using dummy data now
       $scope.getList = function(e) {
         if ($scope.moreInfo) {
+          
           $scope.eventList = true;
           $scope.moreInfo = false; // The moreInfo area should not be clickable after clicked
-          
           Ideas.getYelp($scope.data.yelpSearch)
           .then(function(resp) {
             $scope.yelpResults = resp.data;
@@ -46,7 +46,6 @@ angular.module('App.ideaBtn', [])
           });
           $('.get-idea-btn').hide();
           DisplayGif.startGif();
-
 
 
           // $state.go('list', {id:$scope.idea});

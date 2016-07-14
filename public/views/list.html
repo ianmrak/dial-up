@@ -4,10 +4,8 @@
 <button idea-button class="backBtn" ng-click="goBack()">Back</button>
 </div>
 </div> -->
-<!-- ng-if="eventList" ng-controller="ListController"-->
-
 <img class="spinner" src='/loading_gif/rainbow.gif'>
-<div class="listWrapper">
+<div class="listWrapper" ng-if="eventList" ng-controller="ListController">
 
   <a href="{{ wikiResults.link }}" target="_blank">
     <div class="list-item">
