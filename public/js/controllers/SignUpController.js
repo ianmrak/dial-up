@@ -1,3 +1,5 @@
-angular('App.signUpCtrl', function() {
-  
+angular.module('App.signUpCtrl', [])
+
+.controller('signUpCtrl', function() {
+
 })

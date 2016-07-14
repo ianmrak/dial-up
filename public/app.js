@@ -8,7 +8,6 @@ angular.module('App',
   'App.ideaBtn',
   'App.gifService',
   'App.listCtrl',
-  'App.signUpCtrl',
   'ngAnimate',
   'ui.router'
 ])
@@ -23,9 +22,9 @@ angular.module('App',
   })
   // $locationProvider.html5Mode(true);
   // routing for old view swap - not to be used with new look
-    .state('home.list', {
-      url: '{searchTerm}',
-      templateUrl: 'views/list.html',
-      controller: 'ListController'
-    })
+  // .state('list', {
+  //   url: '/:id',
+  //   templateUrl: 'views/list.html',
+  //   controller: 'ListController'
+  // })
 })

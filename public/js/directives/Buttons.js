@@ -11,7 +11,7 @@ angular.module('App.ideaBtn', [])
           $scope.idea = idea.data.display;
           $scope.moreInfo = true;
           $scope.sideBtns = true;
-          // $scope.eventList = false;
+          $scope.eventList = false;
           $scope.changeClass();
           $scope.button = "Next";
           $scope.yelpResults = '';
@@ -29,7 +29,6 @@ angular.module('App.ideaBtn', [])
         if ($scope.moreInfo) {
           $scope.eventList = true;
           $scope.moreInfo = false; // The moreInfo area should not be clickable after clicked
-          
           Ideas.getYelp($scope.data.yelpSearch)
           .then(function(resp) {
             $scope.yelpResults = resp.data;

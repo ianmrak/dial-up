@@ -86,9 +86,9 @@ var ideas = {
       yelpSearch: "Hike",
       wikiSearch: "Hiking"
     },
-    { display: "Get a nightcap at a local bar",
+    { display: "Get a night cap at a local bar",
       yelpSearch: "cocktail bar",
-      wikiSearch: "Nightcap_(beverage)"
+      wikiSearch: "night cap"
     },
     { display: "Make dinner together",
       yelpSearch: "grocery store",
@@ -195,8 +195,8 @@ var ideas = {
       wikiSearch: "German cuisine"
     },
     { display: "Tapas",
-      yelpSearch: "Tapas",
-      wikiSearch: "Tapas"
+      yelpSearch: "Tapas food",
+      wikiSearch: "Tapas cuisine"
     },
     { display: "Burgers",
       yelpSearch: "hamburger",
