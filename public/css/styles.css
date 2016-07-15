@@ -58,9 +58,16 @@ html, body {
 .navbar {
   height: 40px;
   line-height: 40px;
+  padding: 0px 30px;
   margin: 0;
   border-bottom: 1px solid #868686;
   background-color: rgba(107, 124, 142, .9);
+}
+.navbar > div {
+  float: right;
+}
+.navbar > div:first-child {
+  float: left;
 }
 .footer {
   z-index: 10000;
@@ -338,9 +345,9 @@ input:hover {
 /*sign up button* -------------------*/
 
 .signUpButton {
-  position: absolute;
+  /*position: absolute;
   left: 95%;
-  bottom: 95.5%;
+  bottom: 95.5%;*/
 }
 
 .cancelApplication {
