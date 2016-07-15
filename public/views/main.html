@@ -4,8 +4,13 @@
   </div>
   <event-list class></event-list>
   <!-- <button idea-button class="dislike mainscreen button" ng-click="dislikeIdea()" ng-if="sideBtns">Dislike</button> -->
+    <div ui-view></div>
+
+  <a ui-sref="home">
     <button class="get-idea-btn" ng-click="getIdea()">
-      <div class='btn-inner'>{{ button }}</div>
+        <div class='btn-inner'>{{ button }}</div>
     </button>
+  </a>
+
   <!-- <button idea-button class="like mainscreen button" ng-click="likeIdea()" ng-if="sideBtns">Like</button> -->
 </div>

@@ -14,16 +14,17 @@ var getIdeaList = function(callback) {
 };
 
 var generateRandomIdea = function (object, category, callback) {
-  console.log(object, category)
   if (category === 'Random!') {
     var categories = Object.keys(object);
     var randomCategory = categories[Math.floor(Math.random() * Object.keys(object).length)];
     var randomEvent = Math.floor(Math.random() * object[randomCategory].length);
+    console.log(randomCategory, randomEvent, category);
     callback(object[randomCategory][randomEvent]);
   }
   else {
     var len = object[category].length;
     var random = Math.floor(Math.random() * len);
+    console.log(random, category);
     callback(object[category][random]);
   }
 };
@@ -116,7 +117,19 @@ var ideas = {
     },
     { display: "Take a cooking class",
       yelpSearch: "cooking class",
-      wikiSearch: ""
+      wikiSearch: "culinary school"
+    },
+    { display: "Attend a yoga class",
+      yelpSearch: "yoga",
+      wikiSearch: "yoga"
+    },
+    { display: "Try rock climbing",
+      yelpSearch: "rock climbing",
+      wikiSearch: "Rock_climbing"
+    },
+    { display: "Go on a fishing excursion",
+      yelpSearch: "fishing",
+      wikiSearch: "fishing"
     }
   ],
   "Quick Trips": [
@@ -134,7 +147,7 @@ var ideas = {
     },
     { display: "Visit a national/state park",
       yelpSearch: "National Park",
-      wikiSearch: "National Park"
+      wikiSearch: "National_park"
     },
     { display: "Be the next top chef",
       yelpSearch: "cooking lessons",
@@ -154,7 +167,23 @@ var ideas = {
     },
     { display: "Skydiving!",
       yelpSearch: "skydiving",
-      wikiSearch: "skydiving"
+      wikiSearch: "parachuting"
+    },
+    { display: "Whale watching",
+      yelpSearch: "Whale Watching",
+      wikiSearch: "Whale_watching"
+    },
+    { display: "Go snorkeling",
+      yelpSearch: "Snorkeling",
+      wikiSearch: "Snorkeling"
+    },
+    { display: "Skiing",
+      yelpSearch: "skiing",
+      wikiSearch: "skiing"
+    },
+    { display: "Go for a sail",
+      yelpSearch: "sailing",
+      wikiSearch: "sailing"
     }
   ],
   "What to Eat": [
@@ -218,7 +247,7 @@ var ideas = {
       yelpSearch: "desserts",
       wikiSearch: "dessert"
     },
-    { display: "Treat yourself: Michelin Star Restaurants",
+    { display: "Treat yo self: Michelin Star Restaurants",
       yelpSearch: "michelin star",
       wikiSearch: "michelin guide"
     }

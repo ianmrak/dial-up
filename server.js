@@ -28,10 +28,9 @@ app.use(function(req,res,next) {
 // INITIAL ENDPOINT ROUTING
 
 // INDEX.HTML - Served when user hits server
-app.get('/', function(req, res) {
-  // yelpSearch.yelpSearch;
-  res.sendFile(path + 'index.html');
-});
+// app.get('/', function(req, res) {
+//   res.sendFile(path + 'index.html');
+// });
 
 // app.get('api/getCategories', function(req, res, next) {
 //   res.send({categories: ['gifts', 'activities', 'trips', 'food']})
@@ -106,14 +105,15 @@ app.post('/api/wikiDetails', function(req, res, next) {
   });
 });
 
+app.get('/*', function(req, res) {
+  res.sendFile(path + 'index.html');
+});
 
 
 
-app.listen(3000, function() {
-  console.log('App listening on port 3000!');
 
   // do other stuff
   app.use(express.static(__dirname + '/public'))
   app.listen(port, function() {
-    console.log('App listening on port 1337')});
-});
+    console.log('App listening on port 1337')
+  });

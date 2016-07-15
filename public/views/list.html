@@ -9,7 +9,7 @@
 
   <a href="{{ wikiResults.link }}" target="_blank">
     <div class="list-item">
-      <span class="suggestion-description">DESCRIPTION: {{ wikiResults.description }}</span>
+      <span class="suggestion-description">{{ wikiResults.description }}</span>
     </div>
   </a>
   <div ng-repeat="result in yelpResults | orderBy: '-rating' ">
