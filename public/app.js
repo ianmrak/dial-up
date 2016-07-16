@@ -29,5 +29,4 @@ angular.module('App',
       templateUrl: 'views/list.html',
       controller: 'ListController'
     })
-
-})
+});
