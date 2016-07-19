@@ -1,1 +1,5 @@
+<<<<<<< 9b3000d904e77e863d594be5406a2f539c86c938
 aaron@test.com
+=======
+ianmrak@gmail.com
+>>>>>>> Cleaning up repeated code
