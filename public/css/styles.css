@@ -77,10 +77,6 @@ body {
 .toggle-up:before {
   content: "\25B2";
 }
-/*.getInfo:active {
-font-size: 38px;
-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.5);
-}*/
 .noInfo {
 }
 
@@ -151,9 +147,6 @@ box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.5);
   width: 115px;
   color: white;
 }
-/*.navbar > div:first-child {
-float: left;
-}*/
 .footer {
   z-index: 10000;
   position: fixed;
@@ -185,7 +178,6 @@ float: left;
   margin-bottom: 40px;
   display: none;
   max-height: 0px;
-  /*border: 1px solid #868686;*/
 }
 /* List values */
 .list-item > .suggestion-description {
@@ -229,13 +221,10 @@ a {
 .rating {
   width: 10%;
   float: right;
-  /*margin-top: 5px;*/
   text-align: right;
 }
 .event {
   padding: 0 1%;
-  /*  margin-left: 10px;
-  margin-right: 10px;*/
 }
 
 .yelpstars {
@@ -315,7 +304,7 @@ a.target {
   width:150px;
   height:150px;
   display:inline-block;
-  font-family:Arial, "Helvetica", sans-serif;
+  font-family:"Optima", Arial, "Helvetica", sans-serif;
   font-size:30px;
   font-weight:bold;
   color:#fff;
@@ -471,13 +460,13 @@ input:hover {
   margin: 0 auto;
   width: 600px;
   border-radius: 7px;
-  padding: 40px 0px;
+  padding: 30px 0px 40px;
   margin-top: 40px;
   background-color: rgba(107, 124, 142, .9);
 }
 .location-text-wrapper {
   background-color: rgba(233, 246, 251, 0.55);
-  padding: 7px 20px;
+  padding: 15px 20px;
   margin-bottom: 30px;
   color: #3e4b5a;
 }

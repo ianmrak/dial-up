@@ -2,8 +2,6 @@
   <div class="menu-link" sidebar-directive="menuState">
     <a href="#" ng-click="toggleMenu()">☰ Menu</a>
   </div>
-  <!-- <span onclick="showSidebar()"></span> -->
-  <!-- <span onclick="hideSidebar()"></span> -->
   <ul class="sidebar-list">
     <a href="" ng-repeat="filter in filters" ng-click="setActive(filter)"
        ng-class="{target: filter === activeFilter}"
