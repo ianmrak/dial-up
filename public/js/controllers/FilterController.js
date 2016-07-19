@@ -17,8 +17,9 @@ angular.module('App.filterCtrl', [])
   $scope.resultCount = 5;
   $scope.location = '';
   $scope.changeLocation = function(loc) {
-    if (parseInt(loc)) {
+    if (parseInt(loc) && loc.length === 5) {
       Ideas.queryData.location = $scope.location;
+      document.getElementById("location-form").reset();
     }
   }
   // when ☰ Menu is clicked, showSidebar gets fired; click again and hideSidebar will fire

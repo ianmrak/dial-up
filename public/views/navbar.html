@@ -16,7 +16,7 @@
     <span class="result-count-message">Result count: {{ resultCount }}</span>
   </div>
   <div class="navbar-location">
-    <form ng-submit="changeLocation(location)">
+    <form id="location-form" ng-submit="changeLocation(location)">
       <input id="location-reset" type="text" ng-model="location" placeholder="Change zipcode">
       <button class="location-reset-btn">Submit</button>
     </form>

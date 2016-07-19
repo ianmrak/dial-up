@@ -6,7 +6,7 @@ angular.module('App.ideaCtrl', [])
   $scope.button = "Go!";
   $scope.filter = 'Random!';
   $scope.getLocation = function(loc) {
-    if (parseInt(loc)) {
+    if (parseInt(loc) && loc.length === 5) {
     Ideas.queryData.location = $scope.location;
     $state.go('home');
     }
