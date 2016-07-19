@@ -56,15 +56,18 @@ angular.module('App.ideaBtn', [])
           $('.listWrapper').css("opacity", "0").hide();
         }
       };
+      function resetValues() {
+        $scope.class = 'noInfo';
+        $scope.moreInfo = false;
+        $scope.hasSuggestions = false;
+        $scope.eventList = false;
+        $scope.dropdown = false;
+      }
       $scope.generateRandomIdea = function (category, callback) {
         if (category === 'Random!') {
           if (Object.keys($scope.suggestionList).length === 0) {
             callback({display: "Suggestion List Exhausted", yelpSearch: "", wikiSearch: "Decision-making"});
-            $scope.class = 'noInfo';
-            $scope.moreInfo = false;
-            $scope.hasSuggestions = false;
-            $scope.eventList = false;
-            $scope.dropdown = false;
+            resetValues();
             return;
           }
           var categories = Object.keys($scope.suggestionList);
@@ -72,11 +75,7 @@ angular.module('App.ideaBtn', [])
         }
         if ($scope.suggestionList[category] === undefined) {
           callback({display: "No more suggestions in this category", yelpSearch: "", wikiSearch: "Decision-making"});
-          $scope.class = 'noInfo';
-          $scope.moreInfo = false;
-          $scope.hasSuggestions = false;
-          $scope.eventList = false;
-          $scope.dropdown = false;
+          resetValues();
         } else {
           var random = Math.floor(Math.random() * $scope.suggestionList[category].length);
           var suggestion = $scope.suggestionList[category][random];

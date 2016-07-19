@@ -77,10 +77,6 @@ body {
 .toggle-up:before {
   content: "\25B2";
 }
-/*.getInfo:active {
-font-size: 38px;
-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.5);
-}*/
 .noInfo {
 }
 
@@ -151,8 +147,6 @@ box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.5);
   width: 115px;
   color: white;
 }
-/*.navbar > div:first-child {
-float: left;
 }*/
 .footer {
   z-index: 10000;
@@ -185,7 +179,6 @@ float: left;
   margin-bottom: 40px;
   display: none;
   max-height: 0px;
-  /*border: 1px solid #868686;*/
 }
 /* List values */
 .list-item > .suggestion-description {
@@ -229,13 +222,10 @@ a {
 .rating {
   width: 10%;
   float: right;
-  /*margin-top: 5px;*/
   text-align: right;
 }
 .event {
   padding: 0 1%;
-  /*  margin-left: 10px;
-  margin-right: 10px;*/
 }
 
 .yelpstars {
@@ -477,7 +467,7 @@ input:hover {
 }
 .location-text-wrapper {
   background-color: rgba(233, 246, 251, 0.55);
-  padding: 7px 20px;
+  padding: 15px 20px;
   margin-bottom: 30px;
   color: #3e4b5a;
 }
